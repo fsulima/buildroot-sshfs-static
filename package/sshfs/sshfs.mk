@@ -4,9 +4,11 @@
 #
 ################################################################################
 
-SSHFS_VERSION = 3.7.3
-SSHFS_SOURCE = sshfs-$(SSHFS_VERSION).tar.xz
-SSHFS_SITE = https://github.com/libfuse/sshfs/releases/download/sshfs-$(SSHFS_VERSION)
+
+SSHFS_VERSION = ccb6821019c19600110af6750e0d2395a9401617
+SSHFS_SITE = https://github.com/libfuse/sshfs.git
+SSHFS_SITE_METHOD = git
+
 SSHFS_LICENSE = GPL-2.0
 SSHFS_LICENSE_FILES = COPYING
 SSHFS_DEPENDENCIES = \

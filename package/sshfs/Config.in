@@ -3,7 +3,7 @@ config BR2_PACKAGE_SSHFS
 	depends on BR2_USE_WCHAR # glib2
 	depends on BR2_TOOLCHAIN_HAS_THREADS # libfuse3, glib2
 	depends on BR2_USE_MMU # libfuse3, glib2
-	depends on !BR2_STATIC_LIBS # libfuse3
+	#depends on !BR2_STATIC_LIBS # libfuse3
 	select BR2_PACKAGE_LIBFUSE3
 	select BR2_PACKAGE_LIBGLIB2
 	select BR2_PACKAGE_LIBICONV if !BR2_ENABLE_LOCALE
